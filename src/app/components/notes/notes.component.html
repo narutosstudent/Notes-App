@@ -1,0 +1,7 @@
+<ul class="notes">
+  <li *ngFor="let note of notes" [ngClass]="{'notes__note': selectedNote !== note}" (click)="onSelect(note)" [class.notes__note--active]="selectedNote === note">
+    <a href="#" class="notes__text">{{note.text}}</a>
+    <span class="notes__date"> {{note.date | date: "short"}} </span>
+    <i class="notes__delete" (click)="onDelete(note)">X</i>
+  </li>
+</ul>

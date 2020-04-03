@@ -1,0 +1,16 @@
+@import "../../../styles.scss";
+.nav {
+  height: 7rem;
+  background-color: $color-forest-dark;
+  box-shadow: 0rem .5rem 1rem black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  &__text {
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: $color-forest-light;
+    text-shadow: 0rem .1rem .5rem black;
+    font-size: 4rem;
+  }
+}

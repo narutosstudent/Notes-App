@@ -1,0 +1,7 @@
+<form (ngSubmit)="onSubmit()" class="form">
+  <input type="text" class="form__text" name="text" required [(ngModel)]="text" placeholder="Add Notes . . .">
+  <div class="form__wrapper">
+    <input type="submit" value="Add Note" class="form__button" [disabled]="!this.text">
+    <button (click)="clearState()" type="button" class="form__button" [hidden]="!this.text">Clear</button>
+  </div>
+</form>
